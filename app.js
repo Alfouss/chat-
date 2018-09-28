@@ -25,30 +25,6 @@ app.post('/', function(req, res) {
   res.json({"name": req.body});
 })
 
-// app.get('/api/:id', function(req, res) {
-//
-//     var json = {
-//         "pokemon": [{
-//             "id": 1,
-//             "num": "001",
-//             "name": "Bulbasaur",
-//         },{
-//             "id": 2,
-//             "num": "002",
-//             "name": "Pickachu",
-//         },{
-//             "id": 3,
-//             "num": "003",
-//             "name": "Draco",
-//         }]}
-//
-//     res.setHeader('Content-Type', 'application/json');
-//     // console.log(req.params.id)
-//     console.log(res.json(json.pokemon[req.params.id-1]));
-//
-//     // res.render('apiTest', {title: 'Api'});
-//
-// })
 
 io.on('connection', function (socket) {
     console.log('you are connected');
